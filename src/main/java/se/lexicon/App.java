@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
-        // Should we make a program to interact with or just print everything?
         int size = NameRepository.getSize();
         System.out.println("Size at start: " + size);
         NameRepository.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
@@ -36,6 +35,7 @@ public class App {
 
         printAllNames("Anna", NameRepository.findByFirstName("Anna"));
         printAllNames("Glenn", NameRepository.findByFirstName("Glenn"));
+
         printAllNames("Doe", NameRepository.findByLastName("Doe"));
         printAllNames("Andersson", NameRepository.findByLastName("Andersson"));
         textDivider();
